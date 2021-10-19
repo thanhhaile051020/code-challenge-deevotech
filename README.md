@@ -1,5 +1,5 @@
 # Getting Started with Create React App
-Dự án này sử dụng 
+This project build with 
 
 library UI  ReactJS
 
@@ -7,15 +7,15 @@ library UI Ant Designt
 
 ## Available Scripts
 
-cách lệnh thực thi trong dự án:
+Scripts included
 
-cài đặt app
+Installation
 ### `npm install`
 
-khởi chạy app 
+Start the project
 
 ### `npm start`
 
-app sẽ chạy trên http://localhost:3000
-Mở [http://localhost:3000](http://localhost:3000) trên trình duyệt.
+This project will run on http://localhost:3000
+Open [http://localhost:3000](http://localhost:3000) on your browser.
 

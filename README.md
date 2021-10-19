@@ -5,7 +5,7 @@ library UI Ant Designt
 
 ## Available Scripts
 
-In the project directory, you can run:
+cách lệnh thực thi trong dự án:
 
 cài đặt app
 ### `npm install`

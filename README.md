@@ -1,9 +1,9 @@
 # Getting Started with Create React App
 This project build with 
 
-library UI  ReactJS
+Library UI  ReactJS
 
-library UI Ant Designt
+Library UI Ant Designt
 
 ## Available Scripts
 

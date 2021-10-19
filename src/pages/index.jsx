@@ -22,12 +22,6 @@ const Home = () => {
       setListCocktails([]);
       return;
     }
-    setListCocktails(
-      data.map((cocktail) => ({
-        ...cocktail,
-        description: cocktail[currentLanguage],
-      }))
-    );
   };
 
   useEffect(()=>{

@@ -22,6 +22,7 @@ const Home = () => {
       setListCocktails([]);
       return;
     }
+    setListCocktails(data)
   };
 
   useEffect(()=>{

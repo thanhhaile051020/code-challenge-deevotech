@@ -1,0 +1,31 @@
+.list-cocktails {
+  .list-cocktails__col {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    .ant-card-hoverable {
+      .ant-card-cover {
+        img {
+          height: 340px !important;
+          width: 340px !important;
+        }
+      }
+      .ant-card-body {
+        height: 150px;
+        p {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+        }
+      }
+    }
+  }
+}
+.empty-cocktails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

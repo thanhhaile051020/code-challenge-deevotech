@@ -2,7 +2,8 @@ import React from "react";
 import { Col, Row } from "antd";
 import { Card } from "antd";
 import "./ListCocktails.scss";
-const ListCocktails = ({ listCocktails }) => {
+import {Lang} from "../constant"
+const ListCocktails = ({ listCocktails ,currentLanguage}) => {
   return (
     <>
       {listCocktails.length > 0 ? (
@@ -15,10 +16,10 @@ const ListCocktails = ({ listCocktails }) => {
                 cover={<img alt="example" src={item.strDrinkThumb} />}
               >
                 <h3>{item.strDrink}</h3>
-                {item.description === null ? (
+                {item[currentLanguage] === null ? (
                   <p>Description is not available on this languages.</p>
                 ) : (
-                  <p>{item.description}</p>
+                  <p>{item[currentLanguage]}</p>
                 )}
               </Card>
             </Col>

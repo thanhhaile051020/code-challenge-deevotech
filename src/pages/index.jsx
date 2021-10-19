@@ -7,8 +7,8 @@ import { Col, Row } from "antd";
 import "./index.scss";
 import SearchBar from "./search-bar";
 import ListCocktails from "./list-cocktails/ListCocktails";
-import {Lang} from "./constant"
-const SocialMedia = () => {
+
+const Home = () => {
   const [listCocktails, setListCocktails] = useState([]);
   const [currentLanguage, setCurrentLanguage] = useState("strInstructions");
   const getCocktails = async (keySearch) => {
@@ -29,20 +29,10 @@ const SocialMedia = () => {
       }))
     );
   };
-  const getDescriptionByLanguages = () => {
-    setListCocktails(
-      listCocktails.map((cocktail) => ({
-        ...cocktail,
-        description: cocktail[currentLanguage],
-      }))
-    );
-  };
+
   useEffect(()=>{
     getCocktails('')
   },[])
-  useEffect(() => {
-    getDescriptionByLanguages();
-  }, [currentLanguage]);
   const onChangeLanguages = (e) => {
     setCurrentLanguage(e)
   };
@@ -54,10 +44,10 @@ const SocialMedia = () => {
         onChangeLanguages={onChangeLanguages}
       ></SearchBar>
 
-      <ListCocktails listCocktails={listCocktails}></ListCocktails>
+      <ListCocktails listCocktails={listCocktails} currentLanguage={currentLanguage}></ListCocktails>
     </div>
   );
 };
-export default SocialMedia;
+export default Home;
 // Axios.get(`http://localhost:8000/users?name=${key}`)
 //     .then(res => setDropdownOptions(res.data));

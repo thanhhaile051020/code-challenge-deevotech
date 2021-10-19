@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Row } from "antd";
 import { Card } from "antd";
 import "./ListCocktails.scss";
-import {Lang} from "../constant"
+import {Lang} from "../language"
 const ListCocktails = ({ listCocktails ,currentLanguage}) => {
   return (
     <>

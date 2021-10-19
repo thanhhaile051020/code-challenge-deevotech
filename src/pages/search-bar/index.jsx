@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { Input, Row, Select } from "antd";
 import "./search-bar.scss";
 import { SearchOutlined } from "@ant-design/icons";
-import { Lang } from "../constant";
+import { Lang } from "../language";
 const SearchBar = ({ onSearch, onChangeLanguages }) => {
   const { Option } = Select;
 
